@@ -1,5 +1,6 @@
 ###  lead scoring model ###
 ## 2016-17
+## Author :: Ankit ##
 getwd()
 setwd("D:\\Ankit Club Mahindra\\lead scoring revise\\8 july 2016 new lead model")
 library(RODBC)
