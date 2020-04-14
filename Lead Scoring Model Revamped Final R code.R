@@ -1,15 +1,13 @@
 ###  lead scoring model ###
 ## Date ::: 2016-17
 ## Author :: Ankit ##
-## revised lead scoring model ##
 getwd()
-setwd("D:\\Ankit Club Mahindra\\lead scoring revise\\8 july 2016 new lead model")
 library(RODBC)
 library(dplyr)
 
 ## connection string
 
-channel <- odbcDriverConnect(connection = "Driver={SQL Server Native Client 11.0};Server=10.151.0.19;Database=CES_PRJ_Club_Mahindra_Prod;Trusted_Connection=yes;")
+channel <- odbcDriverConnect(connection = "Driver={SQL Server Native Client 11.0};Server=xx.xxx.x.xx;Database=xxxx;Trusted_Connection=yes;")
 
 # sample data
 
@@ -373,7 +371,6 @@ my.vars<-mutate(my.vars,my.response$'QMAflag')
 my.vars<-mutate(my.vars,my.design$glmscore)
 head(my.vars)
 getwd()
-setwd("D:\\Ankit Club Mahindra\\lead scoring revise\\8 july 2016 new lead model")
 write.csv(my.vars,"Final Training 1 lac GLM scores.csv")
 
 # Confusio matrix on training data
