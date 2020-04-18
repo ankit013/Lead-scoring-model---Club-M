@@ -1,1 +1,1 @@
-# Lead-scoring-model---Club-M
+# Lead-scoring-model
